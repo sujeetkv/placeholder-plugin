@@ -6,7 +6,7 @@
  */
 
 tinymce.PluginManager.add('placeholder', function(editor, url){
-	var placeholder_items = editor.settings.placeholders || [],
+	var placeholder_items = editor.getParam('placeholders', []), /* editor.settings.placeholders || [] */
 	    placeholders = [],
 	    click_handler = function(){
 	        editor.insertContent(this.settings.value);
@@ -44,7 +44,7 @@ tinymce.PluginManager.add('placeholder', function(editor, url){
 			{ text: 'One', value: '{{one}}', onclick: function(){editor.insertContent(this.settings.value);} },
 			{ text: 'Two', value: '{{two}}', onclick: function(){editor.insertContent(this.settings.value);} }
 		]*/
-	});
+    });
 	
 	editor.addMenuItem('placeholder', {
 		text: 'Placeholders',
