@@ -44,7 +44,7 @@ tinymce.PluginManager.add('placeholder', function(editor, url){
 			{ text: 'One', value: '{{one}}', onclick: function(){editor.insertContent(this.settings.value);} },
 			{ text: 'Two', value: '{{two}}', onclick: function(){editor.insertContent(this.settings.value);} }
 		]*/
-    });
+	});
 	
 	editor.addMenuItem('placeholder', {
 		text: 'Placeholders',
