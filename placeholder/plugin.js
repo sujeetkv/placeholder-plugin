@@ -2,7 +2,7 @@
  * Placeholder plugin for TinyMce editor
  *
  * @author Sujeet <sujeetkv90@gmail.com>
- * @link https://github.com/sujeet-kumar/placeholder-plugin
+ * @link https://github.com/sujeetkv/placeholder-plugin
  */
 
 tinymce.PluginManager.add('placeholder', function(editor, url){
